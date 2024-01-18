@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+eef4ed
+8da9c4
+134074
+13315c
+0b2545
+*/
+
+* {
+  font-family: "Bitter", "Open-sans";
+}
