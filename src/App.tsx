@@ -1,11 +1,11 @@
 import AnimatedCursor from "react-animated-cursor";
 import Header from "./components/header/Header";
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 
 function App() {
   return (
-    <div className="w-full bg-darkblue h-screen text-cream py-2">
-      <AnimatedCursor
+    <div className="w-full bg-darkblue text-cream py-2">
+      {/* <AnimatedCursor
         innerSize={8}
         outerSize={35}
         innerScale={1}
@@ -16,8 +16,8 @@ function App() {
           background: "none",
         }}
         innerStyle={{ backgroundColor: "white" }}
-        clickables={["a"]}
-      />
+        clickables={[]}
+      /> */}
       <Header />
       <Home />
     </div>
