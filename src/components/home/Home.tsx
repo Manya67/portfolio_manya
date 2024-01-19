@@ -1,3 +1,4 @@
+import Box from "../box/Box";
 import Skill from "../skills/Skill";
 import Intro from "./Intro";
 import Links from "./Links";
@@ -12,6 +13,10 @@ const Home = () => {
         <Links />
       </div>
       <Skill />
+      <div className="w-[60%] flex justify-center items-center gap-5">
+        <Box heading="Education" />
+        <Box heading="Work Experience" />
+      </div>
     </div>
   );
 };
