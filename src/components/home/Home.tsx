@@ -1,9 +1,10 @@
 import Box from "../box/Box";
+import Layout from "../projects/Layout";
 import Skill from "../skills/Skill";
 import Intro from "./Intro";
 import Links from "./Links";
 import Salutation from "./Salutation";
-
+import { projectTabs } from "../../constants/ProjectData";
 const Home = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-start pt-10 gap-24">
@@ -17,6 +18,14 @@ const Home = () => {
         <Box heading="Education" />
         <Box heading="Work Experience" />
       </div>
+      <div className="w-[80%] flex flex-col gap-14">
+        {projectTabs.map((data, index) => {
+          return <Layout {...data} key={index} />;
+        })}
+        <div className="flex justify-end">
+          <button>View More</button>
+        </div>
+      </div>
     </div>
   );
 };
@@ -29,7 +38,7 @@ home
     i'm Manya frontend devloper ---
     links ---
     skills --- (crousels) 
-    education, work exp
-    projects 
-    footer 
+    education, work exp ---
+    projects --- 
+    footer ---
 */
