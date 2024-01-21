@@ -4,39 +4,28 @@ export interface boxProps {
 export interface boxTimeline {
   name: string;
   date: string;
+  desc: string;
   active: boolean;
 }
 export const workExpTabs: boxTimeline[] = [
   {
     name: "Kursha",
     date: "May 23 - July 23",
-    active: true,
-  },
-  {
-    name: "Kursha",
-    date: "May 23 - July 23",
-    active: false,
-  },
-  {
-    name: "Kursha",
-    date: "May 23 - July 23",
-    active: false,
-  },
-  {
-    name: "Kursha",
-    date: "May 23 - July 23",
+    desc: "Frontend developer Intern",
     active: false,
   },
 ];
 export const educationTabs: boxTimeline[] = [
   {
-    name: "JEC",
-    date: "May 23 - July 23",
+    name: "Jabalpur Engineering College",
+    date: "July 20 - Present",
+    desc: "Btech - Computer Science",
     active: true,
   },
   {
-    name: "NSSS",
-    date: "May 23 - July 23",
+    name: "Nachiketa Senior Secondary School",
+    date: " - March 20",
+    desc: "Schooling",
     active: false,
   },
 ];

@@ -1,6 +1,6 @@
 import { headerTabs } from "../../constants/HeaderData";
 import Logo from "./Logo";
-import Tabs from "./Tabs";
+import Tabs from "../shared/Tabs";
 import { TbSunFilled } from "react-icons/tb";
 
 const Header = () => {
@@ -36,4 +36,8 @@ export default Header;
   hover 
   link 
   animation
+
+
+  navigation links 
+  
 */

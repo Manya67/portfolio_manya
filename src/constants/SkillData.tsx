@@ -16,20 +16,6 @@ export const skillTabs = [
   { name: "Javascript" },
   { name: "Bootstrap" },
   { name: "GitHub" },
-  { name: "React" },
-  { name: "Redux" },
-  { name: "TailwindCSS" },
-  { name: "FramerMotion" },
-  { name: "Javascript" },
-  { name: "Bootstrap" },
-  { name: "GitHub" },
-  { name: "React" },
-  { name: "Redux" },
-  { name: "TailwindCSS" },
-  { name: "FramerMotion" },
-  { name: "Javascript" },
-  { name: "Bootstrap" },
-  { name: "GitHub" },
 ];
 
 export const skill_map: any = {

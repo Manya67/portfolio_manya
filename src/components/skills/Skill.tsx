@@ -5,7 +5,7 @@ const Skill = () => {
   return (
     <div className="w-full bg-grey mt-14 py-6 flex flex-col justify-start items-center gap-10">
       <h1 className="text-4xl text-darkblue font-bold tracking-wider ">
-        Technologies worked with
+        Skilled in
       </h1>
       <div className="flex flex-row justify-center items-center gap-8 w-full">
         {skillTabs.map(({ name }, index) => {

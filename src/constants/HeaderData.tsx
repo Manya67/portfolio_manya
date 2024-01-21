@@ -10,10 +10,10 @@ export const headerTabs: headerTabsDetails[] = [
   },
   {
     name: "Project",
-    navigateTo: "/project",
+    navigateTo: "/",
   },
   {
     name: "Contact",
-    navigateTo: "/contact",
+    navigateTo: "/",
   },
 ];

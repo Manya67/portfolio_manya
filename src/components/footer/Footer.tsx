@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-20 mb-0">
+    <div className="w-full flex flex-col items-center justify-center gap-5 mt-20 mb-0">
       <div className="w-[80%]">
         <div className="mb-8">
           <p className="text-justify text-xl">
@@ -19,11 +21,23 @@ const Footer = () => {
             <div>
               <h3 className="text-lg">Let's Connect</h3>
               <div className="flex gap-2">
-                <span>Resume</span>
+                <Link
+                  to="https://drive.google.com/drive/folders/1cZAuxu6KEuy9jdegU89Ju3qjEbBNFv0W?usp=drive_link"
+                  target="_"
+                >
+                  <span>Resume</span>
+                </Link>
                 <span>|</span>
-                <span>LinkedIN</span>
+                <Link
+                  to="https://www.linkedin.com/in/manya-jain62002/"
+                  target="_blank"
+                >
+                  <span>LinkedIN</span>
+                </Link>
                 <span>|</span>
-                <span>GitHub</span>
+                <Link to="https://github.com/Manya67" target="_blank">
+                  <span>GitHub</span>
+                </Link>
               </div>
             </div>
             <div>
@@ -31,11 +45,15 @@ const Footer = () => {
               <h5>Last Upadted on JAN'23</h5>
             </div>
           </div>
-          <div>Copyrights @ Manya Jain </div>
         </div>
       </div>
+      <div className="w-full bg-blue text-center">Copyrights @ Manya Jain </div>
     </div>
   );
 };
 
 export default Footer;
+/**
+ * desc - change
+ * made with "heart"
+ */

@@ -1,8 +1,18 @@
 import Buttons from "./Buttons";
 import { projectTabsDetail } from "../../constants/ProjectData";
+import { Link } from "react-router-dom";
 
 const Layout = (detail: projectTabsDetail) => {
-  const { projectName, subHeading, picture, desc, align, buttonTabs } = detail;
+  const {
+    projectName,
+    subHeading,
+    picture,
+    desc,
+    align,
+    buttonTabs,
+    repoLink,
+    liveLink,
+  } = detail;
   return (
     <div
       className={`w-full flex h-80 gap-8 ${
@@ -10,9 +20,17 @@ const Layout = (detail: projectTabsDetail) => {
       }`}
     >
       <div className={`w-1/12 h-full bg-green-900 `}></div>
-      <div className={`w-5/12 h-full border-2 border-white `}>
-        <img src={picture} alt="project" />
-      </div>
+      <Link
+        to={liveLink}
+        target="_blank"
+        className="w-5/12 h-full border-2 border-white hover:bg-black/60"
+      >
+        <img
+          src={picture}
+          alt="project"
+          className="object-fill w-full h-full hover:opacity-50"
+        />
+      </Link>
       <div className="w-5/12 h-full flex flex-col items-start gap-2">
         <h4 className="text-xl leading-none tracking-wide h-[10%]">
           {subHeading}
@@ -26,9 +44,13 @@ const Layout = (detail: projectTabsDetail) => {
           </div>
           <p className="text-lg">{desc}</p>
         </div>
-        <div className="h-[15%]">
-          <button>view repo</button>
-        </div>
+        <Link to={repoLink} target="_blank">
+          <div className="h-[15%]">
+            <button className="border-2 py-2 px-4 rounded-xl">
+              View repositary
+            </button>
+          </div>
+        </Link>
       </div>
       <div className="w-1/12"></div>
     </div>
@@ -37,14 +59,9 @@ const Layout = (detail: projectTabsDetail) => {
 
 export default Layout;
 /**
- * block
- * photo
- *      photo (hover)
  *
- * heading
- *        heading
- *        desc
- *        points
- *        link
+ * hover - text
+ * images
+ * color of block
  *
  */

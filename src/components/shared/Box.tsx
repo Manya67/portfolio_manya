@@ -29,12 +29,16 @@ const Box = ({ heading }: boxProps) => {
               <TimelineItem key={index}>
                 <TimelineSeparator>
                   <TimelineDot color={tab.active ? "success" : "grey"} />
-                  {index < workExpTabs.length - 1 && <TimelineConnector />}
+                  {index <
+                    (heading === "Education" ? educationTabs : workExpTabs)
+                      .length -
+                      1 && <TimelineConnector />}
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <TimelineContent sx={{ pt: "2px", px: 2, pb: "12px" }}>
                   <Typography variant="h6" component="span">
                     {tab.name}
                   </Typography>
+                  <Typography>{tab.desc}</Typography>
                   <Typography>{tab.date}</Typography>
                 </TimelineContent>
               </TimelineItem>
