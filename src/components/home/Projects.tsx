@@ -16,7 +16,7 @@ const Projects = () => {
             setItemCount(itemCount == 2 ? projectTabs.length : 2);
             setLoadMore(!loadMore);
           }}
-          className="border-2 py-2 px-4 rounded-xl"
+          className="border-2 py-2 px-4 rounded-xl dark:border-lighter dark:text-lighter dark:hover:border-highlighter dark:hover:text-white"
         >
           {loadMore ? "Show Less" : "Load More"}
         </button>

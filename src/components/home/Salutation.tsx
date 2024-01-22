@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Salutation = () => {
   return (
-    <div>
+    <div className="dark:text-lighter">
       <TypeAnimation
         sequence={[
           "Hello ",

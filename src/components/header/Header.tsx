@@ -1,9 +1,17 @@
 import { headerTabs } from "../../constants/HeaderData";
 import Logo from "./Logo";
 import Tabs from "../shared/Tabs";
-import { TbSunFilled } from "react-icons/tb";
+import { TbSunFilled, TbMoonFilled } from "react-icons/tb";
+import useTheme from "../../context/Theme";
 
 const Header = () => {
+  const { themeMode, darkTheme, lightTheme } = useTheme();
+
+  const toggle = () => {
+    if (themeMode === "light") {
+      darkTheme();
+    } else lightTheme();
+  };
   return (
     <div className="w-full flex justify-center items-center h-20">
       <div className="w-[80%] h-full flex justify-between items-center gap-2 ">
@@ -15,9 +23,16 @@ const Header = () => {
             );
           })}
         </div>
-        <div className="h-10 w-12 bg-cream rounded-full flex items-center justify-center">
-          <TbSunFilled size="1.85em" color="#0b2545" />
-        </div>
+        <button
+          className="h-10 w-12 rounded-full flex items-center justify-center"
+          onClick={() => toggle()}
+        >
+          {themeMode === "light" ? (
+            <TbMoonFilled size="1.85em" color="#000" />
+          ) : (
+            <TbSunFilled size="1.85em" color="#FFD700" />
+          )}
+        </button>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ import {
 
 const Box = ({ heading }: boxProps) => {
   return (
-    <div className="w-1/2 h-80 overflow-y-scroll p-2 shadow-lg rounded-md border-blue border-[2px]">
+    <div className="w-1/2 h-80 overflow-y-scroll p-2 shadow-lg rounded-md dark:border-grey dark:bg-dark border-[2px]">
       <h1 className="text-xl px-4 font-mono">{heading}</h1>
       <Timeline
         sx={{
@@ -35,7 +35,7 @@ const Box = ({ heading }: boxProps) => {
                       1 && <TimelineConnector />}
                 </TimelineSeparator>
                 <TimelineContent sx={{ pt: "2px", px: 2, pb: "12px" }}>
-                  <Typography variant="h6" component="span">
+                  <Typography variant="h6" component="span" color="#fff">
                     {tab.name}
                   </Typography>
                   <Typography>{tab.desc}</Typography>

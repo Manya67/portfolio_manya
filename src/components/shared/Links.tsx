@@ -14,8 +14,8 @@ const Links = ({ tabs, icons }: links) => {
         return (
           <Tooltip title={name} key={index}>
             <Link to={link} target="_blank">
-              <span className="h-[2.85em] w-[2.85em] bg-cream rounded-full flex justify-center items-center">
-                <LinkLogo size="1.85em" color="#0b2545" />
+              <span className="h-[2.85em] w-[2.85em] dark:bg-lighter dark:hover:bg-white rounded-full flex justify-center items-center">
+                <LinkLogo size="1.85em" color="#181818" />
               </span>
             </Link>
           </Tooltip>
