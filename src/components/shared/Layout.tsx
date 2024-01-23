@@ -15,17 +15,17 @@ const Layout = (detail: projectTabsDetail) => {
   } = detail;
   return (
     <div
-      className={`w-full flex h-80 gap-8 ${
-        align ? "flex-row-reverse" : "flex-row"
+      className={`w-full flex lg:h-80 gap-2 flex-col lg:gap-8 ${
+        align ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
       <div
-        className={`w-1/12 h-full bg-gradient-to-t from-[#cc0479] via-[#ff0096] to-[#ff4cb5]`}
+        className={`hidden lg:block lg:w-1/12 h-full bg-gradient-to-t from-[#cc0479] via-[#ff0096] to-[#ff4cb5]`}
       ></div>
       <Link
         to={liveLink}
         target="_blank"
-        className="w-5/12 h-full border-2 dark:border-grey hover:bg-black/60"
+        className="lg:w-5/12 lg:h-full border-2 dark:border-grey hover:bg-black/60"
       >
         <img
           src={picture}
@@ -33,12 +33,12 @@ const Layout = (detail: projectTabsDetail) => {
           className="object-fill w-full h-full hover:opacity-50"
         />
       </Link>
-      <div className="w-5/12 h-full flex flex-col items-start gap-2">
+      <div className="lg:w-6/12 xl:w-5/12 lg:h-full flex flex-col items-center lg:items-start gap-6">
         <h4 className="text-xl leading-none tracking-wide h-[10%]">
           {subHeading}
         </h4>
-        <div className="flex flex-col justify-between h-[75%]">
-          <h1 className="text-5xl leading-none tracking-wide text-highlighter">
+        <div className="flex flex-col lg:justify-between items-center lg:items-start lg:h-[75%] gap-6">
+          <h1 className="text-5xl leading-none tracking-wide text-highlighter min-h-10">
             {projectName}
           </h1>
           <div className="flex gap-2 flex-wrap ">
@@ -46,17 +46,19 @@ const Layout = (detail: projectTabsDetail) => {
               return <Buttons name={btn.name} key={index} />;
             })}{" "}
           </div>
-          <p className="text-lg">{desc}</p>
+          <p className="text-md xl:text-lg text-ellipsis overflow-hidden w-[90%] lg:w-full">
+            {desc}
+          </p>
         </div>
-        <Link to={repoLink} target="_blank">
-          <div className="h-[15%]">
+        <div className="h-[15%]">
+          <Link to={repoLink} target="_blank">
             <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
               View repositary
             </button>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
-      <div className="w-1/12"></div>
+      <div className="xl:w-1/12 xl:block hidden"></div>
     </div>
   );
 };

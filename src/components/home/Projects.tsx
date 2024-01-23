@@ -6,7 +6,7 @@ const Projects = () => {
   const [loadMore, setLoadMore] = useState(false);
   const [itemCount, setItemCount] = useState(2);
   return (
-    <div className="w-[80%] flex flex-col gap-14">
+    <div className="w-[95%] sm:w-[80%] flex flex-col gap-14 ">
       {projectTabs?.slice(0, itemCount)?.map((data, index) => {
         return <Layout {...data} key={index} />;
       })}

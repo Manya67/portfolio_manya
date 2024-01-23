@@ -9,7 +9,7 @@ import Projects from "./Projects";
 const Home = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-start pt-10 gap-24">
-      <div className="w-[80%] pl-2">
+      <div className="w-[90%] sm:w-[80%] pl-2">
         <Salutation />
         <Intro />
         <Links tabs={linksTabs} icons={link_map} />

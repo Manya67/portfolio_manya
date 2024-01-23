@@ -13,7 +13,7 @@ import {
 
 const Box = ({ heading }: boxProps) => {
   return (
-    <div className="w-1/2 h-80 overflow-y-scroll px-4 py-6 shadow-[inset_5px_5px_29px_#a8a8a8,inset_-5px_-5px_29px_#ffffff] dark:shadow-[inset_5px_5px_12px_#0a0a0a,inset_-5px_-5px_12px_#262626] rounded-[50px]  dark:bg-dark ">
+    <div className="w-[80%] lg:w-1/2 min-h-80 sm:h-80 overflow-y-scroll px-4 py-6 shadow-[inset_5px_5px_29px_#a8a8a8,inset_-5px_-5px_29px_#ffffff] dark:shadow-[inset_5px_5px_12px_#0a0a0a,inset_-5px_-5px_12px_#262626] rounded-[50px]  dark:bg-dark ">
       <h1 className="text-xl px-4 font-mono">{heading}</h1>
       <Timeline
         sx={{

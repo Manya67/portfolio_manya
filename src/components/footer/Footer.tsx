@@ -4,9 +4,9 @@ import { BsBalloonHeartFill } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-5 mt-20 mb-0">
-      <div className="w-[80%]">
+      <div className="lg:w-[80%] px-3 lg:px-0">
         <div className="mb-8">
-          <p className="text-justify text-xl dark:text-white text-darkest">
+          <p className="text-justify lg:text-xl dark:text-white text-darkest">
             Are you looking for a developer who hustles hard but stays humble? A
             curious soul who bobs their head to any music? An FPS gamer who
             plays Valorant? A foodie who will venture out for amazing cuisine
@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-4">
-          <div className="w-full flex justify-between items-center">
+          <div className="w-full flex flex-wrap justify-between items-center gap-4 md:gap-1">
             <div>
               <Link
                 to="#"

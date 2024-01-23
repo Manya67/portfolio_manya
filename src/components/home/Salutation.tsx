@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Salutation = () => {
   return (
-    <div className="dark:text-lighter">
+    <div className="dark:text-lighter text-3xl sm:text-4xl lg:text-[2rem] xl:text-[2.25rem]">
       <TypeAnimation
         sequence={[
           "Hello ",
@@ -22,7 +22,6 @@ const Salutation = () => {
         cursor={true}
         repeat={Infinity}
         style={{
-          fontSize: "2.25rem",
           display: "inline-block",
           fontFamily: "monospace",
         }}

@@ -2,7 +2,7 @@ import Box from "../shared/Box";
 
 const TimeLineBox = () => {
   return (
-    <div className="w-[80%] flex justify-center items-center gap-14">
+    <div className="w-full lg:w-[80%] flex flex-col lg:flex-row justify-center items-center gap-14">
       <Box heading="Education" />
       <Box heading="Work Experience" />
     </div>
