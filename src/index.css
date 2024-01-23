@@ -22,3 +22,7 @@ B3B3B3 LIGHTEST
 /* * {
   font-family: "Bitter", "Open-sans";
 } */
+* {
+  padding: 0;
+  margin: 0;
+}

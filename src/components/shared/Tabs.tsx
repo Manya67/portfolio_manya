@@ -11,7 +11,7 @@ const Tabs = ({ name, navigateTo }: headerTabsDetails) => {
           e.preventDefault();
         }
       }}
-      className="dark:hover:text-white"
+      className="hover:text-highlighter"
     >
       <h3 className="tracking-wider">{name}</h3>
     </Link>

@@ -19,11 +19,13 @@ const Layout = (detail: projectTabsDetail) => {
         align ? "flex-row-reverse" : "flex-row"
       }`}
     >
-      <div className={`w-1/12 h-full dark:bg-highlighter`}></div>
+      <div
+        className={`w-1/12 h-full bg-gradient-to-t from-[#cc0479] via-[#ff0096] to-[#ff4cb5]`}
+      ></div>
       <Link
         to={liveLink}
         target="_blank"
-        className="w-5/12 h-full border-2 border-white dark:border-grey hover:bg-black/60"
+        className="w-5/12 h-full border-2 dark:border-grey hover:bg-black/60"
       >
         <img
           src={picture}
@@ -36,7 +38,7 @@ const Layout = (detail: projectTabsDetail) => {
           {subHeading}
         </h4>
         <div className="flex flex-col justify-between h-[75%]">
-          <h1 className="text-5xl leading-none tracking-wide dark:text-highlighter">
+          <h1 className="text-5xl leading-none tracking-wide text-highlighter">
             {projectName}
           </h1>
           <div className="flex gap-2 flex-wrap ">
@@ -48,7 +50,7 @@ const Layout = (detail: projectTabsDetail) => {
         </div>
         <Link to={repoLink} target="_blank">
           <div className="h-[15%]">
-            <button className="border-2 py-2 px-4 rounded-xl dark:border-lighter dark:text-lighter dark:hover:border-highlighter dark:hover:text-white ">
+            <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
               View repositary
             </button>
           </div>

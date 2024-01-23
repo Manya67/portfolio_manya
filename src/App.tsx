@@ -20,7 +20,7 @@ function App() {
   }, [themeMode]);
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-      <div className="w-full bg-lighter text-dark dark:bg-darkest dark:text-lighter py-2">
+      <div className="w-full bg-white text-lightGrey dark:bg-darkest dark:text-lighter py-2">
         <AnimatedCursor
           innerSize={8}
           outerSize={35}
@@ -28,10 +28,10 @@ function App() {
           outerScale={2}
           trailingSpeed={14}
           outerStyle={{
-            border: "3px solid #FFD700",
+            border: "3px solid #cc0479",
             background: "none",
           }}
-          innerStyle={{ backgroundColor: "#FFD700" }}
+          innerStyle={{ backgroundColor: "#cc0479" }}
           clickables={["a"]}
         />
         <Header />

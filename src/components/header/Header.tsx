@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import Tabs from "../shared/Tabs";
 import { TbSunFilled, TbMoonFilled } from "react-icons/tb";
 import useTheme from "../../context/Theme";
+import { BsSunFill } from "react-icons/bs";
 
 const Header = () => {
   const { themeMode, darkTheme, lightTheme } = useTheme();
@@ -28,9 +29,9 @@ const Header = () => {
           onClick={() => toggle()}
         >
           {themeMode === "light" ? (
-            <TbMoonFilled size="1.85em" color="#000" />
+            <TbMoonFilled size="1.85em" color="#cc0479" />
           ) : (
-            <TbSunFilled size="1.85em" color="#FFD700" />
+            <BsSunFill size="1.85em" color="#cc0479" />
           )}
         </button>
       </div>
