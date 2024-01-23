@@ -6,7 +6,7 @@ import { ThemeProvider } from "./context/Theme";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [themeMode, setThemeMode] = useState("light");
+  const [themeMode, setThemeMode] = useState("dark");
   const darkTheme = () => {
     setThemeMode("dark");
   };
@@ -20,7 +20,7 @@ function App() {
   }, [themeMode]);
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-      <div className="w-full bg-white text-lightGrey dark:bg-darkest dark:text-lighter py-2">
+      <div className="w-full bg-white text-lightGrey dark:bg-darkest dark:text-lighter pt-2">
         <AnimatedCursor
           innerSize={8}
           outerSize={35}
