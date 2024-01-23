@@ -43,7 +43,7 @@ const Layout = (detail: projectTabsDetail) => {
           </h1>
           <div className="flex gap-2 flex-wrap ">
             {buttonTabs.map((btn, index) => {
-              return <Buttons name={btn} key={index} />;
+              return <Buttons name={btn.name} key={index} />;
             })}{" "}
           </div>
           <p className="text-lg">{desc}</p>

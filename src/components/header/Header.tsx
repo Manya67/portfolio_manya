@@ -1,7 +1,6 @@
 import { headerTabs } from "../../constants/HeaderData";
-import Logo from "./Logo";
 import Tabs from "../shared/Tabs";
-import { TbSunFilled, TbMoonFilled } from "react-icons/tb";
+import { TbMoonFilled } from "react-icons/tb";
 import useTheme from "../../context/Theme";
 import { BsSunFill } from "react-icons/bs";
 
