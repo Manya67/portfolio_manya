@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div className="w-full flex justify-center items-center h-20">
       <div className="w-[80%] h-full flex justify-between items-center gap-2 ">
-        <Logo />
+        {/* <Logo /> */}
         <div className="h-full w-full flex justify-end items-center text-2xl gap-8 px-2 ">
           {headerTabs.map((tab, index) => {
             return (

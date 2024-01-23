@@ -13,7 +13,7 @@ import {
 
 const Box = ({ heading }: boxProps) => {
   return (
-    <div className="w-1/2 h-80 overflow-y-scroll p-2 shadow-lg rounded-md dark:border-grey dark:bg-dark border-[2px]">
+    <div className="w-1/2 h-80 overflow-y-scroll px-4 py-6 shadow-[inset_5px_5px_12px_#0a0a0a,inset_-5px_-5px_12px_#262626] rounded-[50px]  dark:bg-dark ">
       <h1 className="text-xl px-4 font-mono">{heading}</h1>
       <Timeline
         sx={{
