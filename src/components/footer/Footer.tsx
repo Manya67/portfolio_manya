@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
 import { BsBalloonHeartFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-5 mt-20 mb-0">
+    <div
+      className="w-full flex flex-col items-center justify-center gap-5 mt-20 mb-0"
+      id="contact"
+    >
       <div className="lg:w-[80%] px-3 lg:px-0">
         <div className="mb-8">
           <p className="text-justify lg:text-xl dark:text-white text-darkest">
@@ -16,44 +18,44 @@ const Footer = () => {
         <div className="w-full flex flex-col justify-center items-center gap-4">
           <div className="w-full flex flex-wrap justify-between items-center gap-4 md:gap-1">
             <div>
-              <Link
-                to="#"
+              <a
+                href="#"
                 onClick={(e) => {
                   window.location.href = "mailto:manyajain62002@gmail.com";
                   e.preventDefault();
                 }}
                 className="dark:text-lighter dark:hover:text-white hover:text-darkest"
               >
-                <h1 className="text-lg">Contact Me</h1>
+                <h1 className="text-lg">Reach out through mail</h1>
                 <p>manyajain62002@gmail.com</p>
-              </Link>
+              </a>
             </div>
             <div>
               <h3 className="text-lg">Let's Connect</h3>
               <div className="flex gap-2">
-                <Link
-                  to="https://drive.google.com/drive/folders/1cZAuxu6KEuy9jdegU89Ju3qjEbBNFv0W?usp=drive_link"
+                <a
+                  href="https://drive.google.com/drive/folders/1cZAuxu6KEuy9jdegU89Ju3qjEbBNFv0W?usp=drive_link"
                   target="_"
                   className="dark:hover:text-white hover:text-darkest"
                 >
                   <span>Resume</span>
-                </Link>
+                </a>
                 <span>|</span>
-                <Link
-                  to="https://www.linkedin.com/in/manya-jain62002/"
+                <a
+                  href="https://www.linkedin.com/in/manya-jain62002/"
                   target="_blank"
                   className="dark:hover:text-white hover:text-darkest"
                 >
                   <span>LinkedIN</span>
-                </Link>
+                </a>
                 <span>|</span>
-                <Link
-                  to="https://github.com/Manya67"
+                <a
+                  href="https://github.com/Manya67"
                   target="_blank"
                   className="dark:hover:text-white hover:text-darkest"
                 >
                   <span>GitHub</span>
-                </Link>
+                </a>
               </div>
             </div>
             <div>

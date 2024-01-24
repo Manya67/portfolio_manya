@@ -22,8 +22,8 @@ const Layout = (detail: projectTabsDetail) => {
       <div
         className={`hidden lg:block lg:w-1/12 h-full bg-gradient-to-t from-[#cc0479] via-[#ff0096] to-[#ff4cb5]`}
       ></div>
-      <Link
-        to={liveLink}
+      <a
+        href={liveLink}
         target="_blank"
         className="lg:w-5/12 lg:h-full border-2 dark:border-grey hover:bg-black/60"
       >
@@ -32,7 +32,7 @@ const Layout = (detail: projectTabsDetail) => {
           alt="project"
           className="object-fill w-full h-full hover:opacity-50"
         />
-      </Link>
+      </a>
       <div className="lg:w-6/12 xl:w-5/12 lg:h-full flex flex-col items-center lg:items-start gap-6">
         <h4 className="text-xl leading-none tracking-wide h-[10%]">
           {subHeading}
@@ -51,11 +51,11 @@ const Layout = (detail: projectTabsDetail) => {
           </p>
         </div>
         <div className="h-[15%]">
-          <Link to={repoLink} target="_blank">
+          <a href={repoLink} target="_blank">
             <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
               View repositary
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="xl:w-1/12 xl:block hidden"></div>

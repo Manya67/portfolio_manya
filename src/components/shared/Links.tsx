@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { linkDetails } from "../../constants/LinkData";
 import { Tooltip } from "@mui/material";
 
@@ -13,11 +12,11 @@ const Links = ({ tabs, icons }: links) => {
         const LinkLogo = icons[name];
         return (
           <Tooltip title={name} key={index}>
-            <Link to={link} target="_blank">
+            <a href={link} target="_blank">
               <span className="h-[1.5em] w-[1.5em] sm:h-[2em] sm:w-[2em] text-[1.85em] bg-lightGrey hover:bg-darkest text-white dark:bg-lighter dark:hover:bg-white dark:text-dark rounded-full flex justify-center items-center">
                 <LinkLogo />
               </span>
-            </Link>
+            </a>
           </Tooltip>
         );
       })}

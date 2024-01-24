@@ -16,7 +16,12 @@ const Home = () => {
       </div>
       <Skill />
       <TimeLineBox />
-      <Projects />
+      <div
+        id="projects"
+        className="w-full h-full flex flex-col items-center justify-start pt-10"
+      >
+        <Projects />
+      </div>
     </div>
   );
 };
