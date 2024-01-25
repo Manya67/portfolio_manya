@@ -36,15 +36,3 @@ const Home = () => {
   );
 };
 export default Home;
-
-/*
-home 
-    Header --
-    hello hey (type animation) ---
-    i'm Manya frontend devloper ---
-    links ---
-    skills --- (crousels) 
-    education, work exp ---
-    projects --- 
-    footer ---
-*/

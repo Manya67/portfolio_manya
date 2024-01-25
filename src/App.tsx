@@ -43,14 +43,3 @@ function App() {
 }
 
 export default App;
-
-/*
- body 
-    upper header 
-    main container
- about us 
-    details 
- projects 
- skills 
- contact 
-*/

@@ -34,20 +34,3 @@ const Header = () => {
 };
 
 export default Header;
-
-/*
-  header  
-        logo manya
-        home 
-        project 
-        contact
-        theme 
-
-  hover 
-  link 
-  animation
-
-
-  navigation links 
-  
-*/

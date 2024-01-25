@@ -1,18 +1,26 @@
 import Buttons from "./Buttons";
 import { projectTabsDetail } from "../../constants/ProjectData";
+import food from "../../utils/projectImg/foodVilla.png";
+import unsplash from "../../utils/projectImg/unsplash.png";
+import docs from "../../utils/projectImg/docs.png";
+export const picture_map: any = {
+  food: food,
+  unsplash: unsplash,
+  docs: docs,
+};
 
 const Layout = (detail: projectTabsDetail) => {
   const {
     id,
     projectName,
     subHeading,
-    picture,
     desc,
     align,
     buttonTabs,
     repoLink,
     liveLink,
   } = detail;
+  const Image = picture_map[id];
   return (
     <div
       className={`w-full flex lg:h-80 gap-2 flex-col lg:gap-8 ${
@@ -28,7 +36,7 @@ const Layout = (detail: projectTabsDetail) => {
         className="lg:w-5/12 lg:h-full border-2 dark:border-grey hover:bg-black/60"
       >
         <img
-          src={picture}
+          src={Image}
           alt="project"
           className="object-fill w-full h-full hover:opacity-50"
         />
@@ -50,10 +58,15 @@ const Layout = (detail: projectTabsDetail) => {
             {desc}
           </p>
         </div>
-        <div className="lg:h-[15%]">
+        <div className="lg:h-[15%] flex gap-2">
+          <a href={liveLink} target="_blank">
+            <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
+              View demo
+            </button>
+          </a>
           <a href={repoLink} target="_blank">
             <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
-              View repositary
+              View repository
             </button>
           </a>
         </div>
