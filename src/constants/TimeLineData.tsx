@@ -24,8 +24,14 @@ export const educationTabs: boxTimeline[] = [
   },
   {
     name: "Nachiketa Senior Secondary School",
-    date: " - March 20",
-    desc: "Schooling",
+    date: "April 2019 - March 2020",
+    desc: "12th Standard",
+    active: false,
+  },
+  {
+    name: "Nachiketa Higher Secondary School",
+    date: "April 2017 - March 2018",
+    desc: "10th Standard",
     active: false,
   },
 ];

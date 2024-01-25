@@ -1,9 +1,9 @@
 import Buttons from "./Buttons";
 import { projectTabsDetail } from "../../constants/ProjectData";
-import { Link } from "react-router-dom";
 
 const Layout = (detail: projectTabsDetail) => {
   const {
+    id,
     projectName,
     subHeading,
     picture,
@@ -33,8 +33,8 @@ const Layout = (detail: projectTabsDetail) => {
           className="object-fill w-full h-full hover:opacity-50"
         />
       </a>
-      <div className="lg:w-6/12 xl:w-5/12 lg:h-full flex flex-col items-center lg:items-start gap-6">
-        <h4 className="text-xl leading-none tracking-wide h-[10%]">
+      <div className="lg:w-6/12 xl:w-5/12 lg:h-full flex flex-col items-center lg:items-start justify- gap-6 lg:gap-1">
+        <h4 className="text-xl leading-none tracking-wide lg:h-[10%] ">
           {subHeading}
         </h4>
         <div className="flex flex-col lg:justify-between items-center lg:items-start lg:h-[75%] gap-6">
@@ -50,7 +50,7 @@ const Layout = (detail: projectTabsDetail) => {
             {desc}
           </p>
         </div>
-        <div className="h-[15%]">
+        <div className="lg:h-[15%]">
           <a href={repoLink} target="_blank">
             <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
               View repositary

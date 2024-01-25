@@ -9,10 +9,10 @@ const Footer = () => {
       <div className="lg:w-[80%] px-3 lg:px-0">
         <div className="mb-8">
           <p className="text-justify lg:text-xl dark:text-white text-darkest">
-            Are you looking for a developer who hustles hard but stays humble? A
-            curious soul who bobs their head to any music? An FPS gamer who
-            plays Valorant? A foodie who will venture out for amazing cuisine
-            with you? ✨ If so, do get in touch!
+            Interested in a developer who works hard but still has the energy to
+            dance? What about a 90s music lover who sings even if their voice
+            isn't pretty? Or someone who believes painting is the only way to
+            escape this hectic world? If so, get in touch!✨
           </p>
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-4">
