@@ -8,14 +8,6 @@ export const headerTabs: headerTabsDetails[] = [
     name: "Home",
     navigateTo: "/",
   },
-  // {
-  //   name: "Skills",
-  //   navigateTo: "#skills",
-  // },
-  // {
-  //   name: "Work",
-  //   navigateTo: "#work",
-  // },
   {
     name: "Project",
     navigateTo: "#projects",

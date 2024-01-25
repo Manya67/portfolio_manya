@@ -3,10 +3,13 @@ import { projectTabsDetail } from "../../constants/ProjectData";
 import food from "../../utils/projectImg/foodVilla.png";
 import unsplash from "../../utils/projectImg/unsplash.png";
 import docs from "../../utils/projectImg/docs.png";
+import youtube from "../../utils/projectImg/youtube.jpeg";
+
 export const picture_map: any = {
   food: food,
   unsplash: unsplash,
   docs: docs,
+  youtube: youtube,
 };
 
 const Layout = (detail: projectTabsDetail) => {
