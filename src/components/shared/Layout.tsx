@@ -4,12 +4,16 @@ import food from "../../utils/projectImg/foodVilla.png";
 import unsplash from "../../utils/projectImg/unsplash.png";
 import docs from "../../utils/projectImg/docs.png";
 import youtube from "../../utils/projectImg/youtube.jpeg";
+import weather from "../../utils/projectImg/weather.png";
+import wordFinder from "../../utils/projectImg/wordFinder.png";
 
 export const picture_map: any = {
   food: food,
   unsplash: unsplash,
   docs: docs,
   youtube: youtube,
+  wordFinder: wordFinder,
+  weather: weather,
 };
 
 const Layout = (detail: projectTabsDetail) => {

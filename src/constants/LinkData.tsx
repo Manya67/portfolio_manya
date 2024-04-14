@@ -10,7 +10,7 @@ export interface linkDetails {
 export const linksTabs = [
   {
     name: "Resume",
-    link: "https://drive.google.com/drive/folders/1cZAuxu6KEuy9jdegU89Ju3qjEbBNFv0W?usp=drive_link",
+    link: "https://drive.google.com/drive/folders/1cZAuxu6KEuy9jdegU89Ju3qjEbBNFv0W?usp=sharing",
   },
   {
     name: "LinkedIN",
