@@ -31,11 +31,25 @@ export const projectTabs: projectTabsDetail[] = [
     liveLink: "https://foodvilla-manya.netlify.app/",
   },
   {
+    id: "weather",
+    projectName: "Aaj ka mousam",
+    subHeading: "Weather displaying web application",
+    desc: `It is a web application displaying the current weather details and future 5 days details`,
+    align: true,
+    buttonTabs: [
+      { name: "OpenWeatherAPI" },
+      { name: "Conditional-rendering" },
+      { name: "Unit changes" },
+    ],
+    repoLink: "https://github.com/Manya67/weatherApp",
+    liveLink: "https://aajkamousam-manya.netlify.app/",
+  },
+  {
     id: "unsplash",
     projectName: "Unsplash Clone",
     subHeading: "Picture showing web application",
     desc: "The application aims to replicate the functionality and user experience of the popular image-sharing platform, Unsplash, by leveraging the Unsplash Live API",
-    align: true,
+    align: false,
     buttonTabs: [
       { name: "ReactJS" },
       { name: "Pagination" },
@@ -50,7 +64,7 @@ export const projectTabs: projectTabsDetail[] = [
     projectName: "Docs.",
     subHeading: "Note taking web application",
     desc: ` "Docs" – a sleek and intuitive note-displaying app designed for seamless organization and effortless accessibility. With an innovative touch of Framer Motion drag property, navigating through your notes becomes an engaging and fluid experience`,
-    align: false,
+    align: true,
     buttonTabs: [
       { name: "ReactJS" },
       { name: "TailwindCSS" },
@@ -65,7 +79,7 @@ export const projectTabs: projectTabsDetail[] = [
     projectName: "Frequent word finder",
     subHeading: "Finds list of most occuring words",
     desc: `Developed this app to find skill requirements based on the most frequent words in the job description.`,
-    align: true,
+    align: false,
     buttonTabs: [
       { name: "Data Structures" },
       { name: "ReactJS" },
@@ -75,24 +89,10 @@ export const projectTabs: projectTabsDetail[] = [
     liveLink: "https://frequent-word-finder.netlify.app/",
   },
   {
-    id: "weather",
-    projectName: "Aaj ka mousam",
-    subHeading: "Weather displaying web application",
-    desc: `It is a web application displaying the current weather details and future 5 days details`,
-    align: false,
-    buttonTabs: [
-      { name: "OpenWeatherAPI" },
-      { name: "Conditional-rendering" },
-      { name: "Unit changes" },
-    ],
-    repoLink: "https://github.com/Manya67/weatherApp",
-    liveLink: "https://aajkamousam-manya.netlify.app/",
-  },
-  {
     id: "youtube",
-    projectName: "VidClone",
+    projectName: "YouStream",
     subHeading: "Video playing web application",
-    desc: "VidClone is a cutting-edge video-sharing platform designed to revolutionize online content consumption. With an intuitive interface reminiscent of popular platforms, VidClone offers users a seamless experience for uploading, sharing, and discovering a diverse range of videos.",
+    desc: "YouStream is a cutting-edge video-sharing platform designed to revolutionize online content consumption. With an intuitive interface reminiscent of popular platforms, VidClone offers users a seamless experience for uploading, sharing, and discovering a diverse range of videos.",
     align: true,
     buttonTabs: [
       { name: "ReactJS" },
@@ -100,7 +100,7 @@ export const projectTabs: projectTabsDetail[] = [
       { name: "Redux" },
       { name: "Rest API" },
     ],
-    repoLink: "https://github.com/Manya67/youtube_clone",
+    repoLink: "https://github.com/Manya67/youstream",
     liveLink: "",
   },
 ];

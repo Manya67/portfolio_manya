@@ -66,16 +66,20 @@ const Layout = (detail: projectTabsDetail) => {
           </p>
         </div>
         <div className="lg:h-[15%] flex gap-2">
-          <a href={liveLink} target="_blank">
-            <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
-              View demo
-            </button>
-          </a>
-          <a href={repoLink} target="_blank">
-            <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
-              View repository
-            </button>
-          </a>
+          {liveLink != "" && (
+            <a href={liveLink} target="_blank">
+              <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
+                View demo
+              </button>
+            </a>
+          )}
+          {repoLink != "" && (
+            <a href={repoLink} target="_blank">
+              <button className="border-2 py-2 px-4 rounded-xl border-lightGrey text-lightGrey hover:text-darkest dark:border-lighter dark:text-lighter hover:border-highlighter dark:hover:border-highlighter dark:hover:text-white ">
+                View repository
+              </button>
+            </a>
+          )}
         </div>
       </div>
       <div className="xl:w-1/12 xl:block hidden"></div>
