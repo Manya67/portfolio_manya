@@ -63,7 +63,7 @@ const Footer = () => {
                 Made with
                 <BsBalloonHeartFill color="#cc0479" />{" "}
               </h3>
-              <h5>Last Upadted on APR'23</h5>
+              <h5>Last Upadted on APR'24</h5>
             </div>
           </div>
         </div>
